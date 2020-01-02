@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>SCR</b> Social Media Crawler</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#twitter" class="w3-bar-item w3-button">Twitter</a>
+      <a href="#instagram" class="w3-bar-item w3-button">Instagram</a>
+      <a href="#youtube" class="w3-bar-item w3-button">Youtube</a>
+      <a href="#facebook" class="w3-bar-item w3-button">Facebook</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+    <!-- Twitter Section -->
+    <div class="w3-container w3-padding-32" id="twitter">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Twitter</h3>
+    </div>
+
+    <div class="w3-container" id="form_authenticate_twitter">
+      <p>Key</p><input class="w3-input w3-section w3-border" type="string" placeholder="key" id="key_twitter">
+      <p>Secret</p><input class="w3-input w3-section w3-border" type="string" placeholder="secret" required id="secret_twitter">
+      <p>Access Token</p><input class="w3-input w3-section w3-border" type="string" placeholder="access token" required id="access_twitter">
+      <p>Access Token Secret</p><input class="w3-input w3-section w3-border" type="string" placeholder="access token secret" required id="access_twitter_secret">
+
+<!--      <input id="warning_authenticate_twitter" class="w3-button w3-black w3-section" type="button" value="Authenticate Failed" style="display:none" />-->
+      <input id="authenticate_twitter" class="w3-button w3-black w3-section" type="button" value="Authenticate" onclick="authenticate()" />
+    </div>
+
+    <div class="w3-container" id="form_twitter">
+      <p>Keyword</p><input class="w3-input w3-section w3-border" type="string" placeholder="#hashtag" id="hashtag_twitter">
+      <p>Since</p><input class="w3-input w3-section w3-border" type="string" placeholder="2019-08-26" required id="since_twitter">
+      <p>Until</p><input class="w3-input w3-section w3-border" type="string" placeholder="2019-08-27" required id="until_twitter">
+      <p>Max Tweet</p><input class="w3-input w3-section w3-border" type="integer" placeholder="1" required id="maxtweets_twitter">
+
+      <input id="generate_twitter" class="w3-button w3-black w3-section" type="button" value="Generate" onclick="crawl_twitter()" />
+    </div>
+
+    <!-- Instagram Section -->
+    <div class="w3-container w3-padding-32" id="instagram">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Instagram</h3>
+    </div>
+
+    <div class="w3-row-padding">
+    <div id="form_instagram">
+        Instagram<br>
+        <input type="string" value="#example" id="hashtag_instagram"><br>
+        <input type="button" value="Submit" onclick="crawl_instagram()" />
+    </div>
+    </div>
+
+    <!-- Youtube Section -->
+    <div class="w3-container w3-padding-32" id="youtube">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Youtube</h3>
+    </div>
+
+    <div class="w3-row-padding">
+    <div id="form_youtube">
+        Youtube<br>
+        <input type="string" value="#example" id="hashtag_youtube"><br>
+        <input type="button" value="Submit" onclick="crawl_youtube()" />
+    </div>
+    </div>
+
+    <!-- Facebook Section -->
+    <div class="w3-container w3-padding-32" id="facebook">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Facebook</h3>
+    </div>
+
+    <div class="w3-row-padding">
+    <div id="form_facebook">
+        Facebook<br>
+        <input type="string" value="#example" id="hashtag_facebook"><br>
+        <input type="button" value="Submit" onclick="crawl_facebook()" />
+    </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Needed for study purpose.
+    </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Bamas Angkasa | 16.51.0030 | inilobamas@gmail.com | 0822571254486 </p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+    </div>
+
+<!-- Image of location/map -->
+<div class="w3-container">
+<!--  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">-->
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Function -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{url_for('static', filename='jquery.js') }}">\x3C/script>')</script>
+<script>
+<!-- Twitter Section -->
+$("#form_twitter").toggle();
+
+function authenticate() {
+    var value_key_twitter = document.getElementById('key_twitter').value;
+    var value_secret_twitter = document.getElementById('secret_twitter').value;
+    var value_access_token_twitter = document.getElementById('access_twitter').value;
+    var value_access_token_secret_twitter = document.getElementById('access_twitter_secret').value;
+    var value_access_twitter = {
+        key: value_key_twitter,
+        secret: value_secret_twitter,
+        access_token: value_access_token_twitter,
+        access_token_secret: value_access_token_secret_twitter
+    }
+
+    $.ajax({
+      type: 'POST',
+      url: "/authenticate_twitter",
+      data: JSON.stringify(value_access_twitter, null, '\t'),
+      contentType: 'application/json;charset=UTF-8',
+      dataType: "text",
+      success: function(result){
+           if (result == "Authorize Twitter Success"){
+                $('#authenticate_twitter').val('Authenticate');
+                $("#form_authenticate_twitter").toggle();
+                $("#form_twitter").toggle();
+           }
+           else{
+                $('#authenticate_twitter').val('Authenticate Failed');
+           }
+      }
+    });
+}
+
+function crawl_twitter() {
+    $('#generate_twitter').val('Loading . . .');
+
+    var value_key_twitter = document.getElementById('key_twitter').value;
+    var value_secret_twitter = document.getElementById('secret_twitter').value;
+    var value_access_token_twitter = document.getElementById('access_twitter').value;
+    var value_access_token_secret_twitter = document.getElementById('access_twitter_secret').value;
+
+    var value_hashtag_twitter = document.getElementById('hashtag_twitter').value;
+    var value_since_twitter = document.getElementById('since_twitter').value;
+    var value_until_twitter = document.getElementById('until_twitter').value;
+    var value_maxtweets_twitter = document.getElementById('maxtweets_twitter').value;
+    var value_twitter = {
+        key: value_key_twitter,
+        secret: value_secret_twitter,
+        access_token: value_access_token_twitter,
+        access_token_secret: value_access_token_secret_twitter,
+        hashtag: value_hashtag_twitter,
+        since: value_since_twitter,
+        until: value_until_twitter,
+        maxtweets: value_maxtweets_twitter
+    }
+    generate_twitter(value_twitter)
+
+}
+
+function generate_twitter(value_twitter) {
+    console.log("value_twitter:", value_twitter)
+    $.ajax({
+      type: 'POST',
+      url: "/generate_twitter",
+      data: JSON.stringify(value_twitter, null, '\t'),
+      contentType: 'application/json;charset=UTF-8',
+      dataType: "text",
+      success: function(result){
+                var blob = new Blob([result]);
+                var link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = "twitter.csv";
+                link.click();
+                $('#generate_twitter').val('Generate');
+               }
+    });
+}
+
+
+
+<!-- Instagram Section -->
+function crawl_instagram() {
+    alert("Crawl Instagram")
+}
+
+
+<!-- Youtube Section -->
+function crawl_youtube() {
+    alert("Crawl Youtube")
+}
+
+
+
+<!-- Facebook Section -->
+function crawl_facebook() {
+    alert("Crawl Facebook")
+}
+</script>
+
+</body>
+</html>
