@@ -52,7 +52,7 @@
       <p>Access Token Secret</p><input class="w3-input w3-section w3-border" type="string" placeholder="access token secret" required id="access_twitter_secret">
 
 <!--      <input id="warning_authenticate_twitter" class="w3-button w3-black w3-section" type="button" value="Authenticate Failed" style="display:none" />-->
-      <input id="authenticate_twitter" class="w3-button w3-black w3-section" type="button" value="Authenticate" onclick="authenticate()" />
+      <input id="authenticate_twitter" class="w3-button w3-black w3-section" type="button" value="Authenticate" onclick="authenticate_twitter()" />
     </div>
 
     <div class="w3-container" id="form_twitter">
@@ -69,12 +69,18 @@
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Instagram</h3>
     </div>
 
-    <div class="w3-row-padding">
-    <div id="form_instagram">
-        Instagram<br>
-        <input type="string" value="#example" id="hashtag_instagram"><br>
-        <input type="button" value="Submit" onclick="crawl_instagram()" />
+    <div class="w3-container" id="form_authenticate_instagram">
+      <p>Username</p><input class="w3-input w3-section w3-border" type="string" placeholder="username" id="username_instagram">
+      <p>Password</p><input class="w3-input w3-section w3-border" type="password" placeholder="password" required id="password_instagram">
+
+      <input id="authenticate_instagram" class="w3-button w3-black w3-section" type="button" value="Authenticate" onclick="authenticate_instagram()" />
     </div>
+
+    <div class="w3-container" id="form_instagram">
+      <p>Keyword</p><input class="w3-input w3-section w3-border" type="string" placeholder="#hashtag" id="hashtag_instagram">
+      <p>Max Tweet</p><input class="w3-input w3-section w3-border" type="integer" placeholder="1" required id="maxposts_instagram">
+
+      <input id="generate_instagram" class="w3-button w3-black w3-section" type="button" value="Generate" onclick="crawl_instagram()" />
     </div>
 
     <!-- Youtube Section -->
@@ -145,8 +151,11 @@
 <script>
 <!-- Twitter Section -->
 $("#form_twitter").toggle();
+$("#form_instagram").toggle();
 
-function authenticate() {
+function authenticate_twitter() {
+    $('#authenticate_twitter').val('Authenticating . . .');
+
     var value_key_twitter = document.getElementById('key_twitter').value;
     var value_secret_twitter = document.getElementById('secret_twitter').value;
     var value_access_token_twitter = document.getElementById('access_twitter').value;
@@ -225,8 +234,70 @@ function generate_twitter(value_twitter) {
 
 
 <!-- Instagram Section -->
+function authenticate_instagram() {
+    $('#authenticate_instagram').val('Authenticating . . .');
+
+    var value_username_instagram = document.getElementById('username_instagram').value;
+    var value_password_instagram = document.getElementById('password_instagram').value;
+
+    var value_access_instagram = {
+        username: value_username_instagram,
+        password: value_password_instagram
+    }
+
+    $.ajax({
+      type: 'POST',
+      url: "/authenticate_instagram",
+      data: JSON.stringify(value_access_instagram, null, '\t'),
+      contentType: 'application/json;charset=UTF-8',
+      dataType: "text",
+      success: function(result){
+           if (result == "Authorize Instagram Success"){
+                $('#authenticate_instagram').val('Authenticate');
+                $("#form_authenticate_instagram").toggle();
+                $("#form_instagram").toggle();
+           }
+           else{
+                $('#form_instagram').val('Authenticate Failed');
+           }
+      }
+    });
+}
+
 function crawl_instagram() {
-    alert("Crawl Instagram")
+    $('#generate_instagram').val('Loading . . .');
+
+    var value_username_instagram = document.getElementById('username_instagram').value;
+    var value_password_instagram = document.getElementById('password_instagram').value;
+
+    var value_hashtag_instagram = document.getElementById('hashtag_instagram').value;
+    var value_maxposts_instagram = document.getElementById('maxposts_instagram').value;
+    var value_instagram = {
+        username: value_username_instagram,
+        password: value_password_instagram,
+        hashtag: value_hashtag_instagram,
+        maxposts: value_maxposts_instagram
+    }
+    generate_instagram(value_instagram)
+}
+
+function generate_instagram(value_instagram) {
+    console.log("value_instagram:", value_instagram)
+    $.ajax({
+      type: 'POST',
+      url: "/generate_instagram",
+      data: JSON.stringify(value_instagram, null, '\t'),
+      contentType: 'application/json;charset=UTF-8',
+      dataType: "text",
+      success: function(result){
+                var blob = new Blob([result]);
+                var link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = "instagram.csv";
+                link.click();
+                $('#generate_instagram').val('Generate');
+               }
+    });
 }
 
 

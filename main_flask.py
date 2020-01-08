@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, Response, send_file, send_from_directory
-import main_twitter, os, tweepy
+import main_twitter, os, tweepy, main_instagram
 
 app = Flask(__name__)
 
@@ -45,6 +45,36 @@ def generate_twitter():
     until = request.json.get("until")
     maxtweets = request.json.get("maxtweets")
     outputFileName = main_twitter.main(consumer_key, consumer_secret, access_token, access_token_secret, hashtag, since, until, maxtweets)
+
+    with open(os.getcwd() + "/" + outputFileName) as fp:
+        csv = fp.read()
+        return Response(
+                csv,
+                mimetype="text/csv",
+                headers={"Content-disposition":
+                         "attachment; filename=" + outputFileName})
+
+@app.route("/authenticate_instagram", methods=['POST'])
+def authenticate_instagram():
+    # Authentication Data
+    username = request.json.get("username")
+    password = request.json.get("password")
+
+    # Authorize
+    auth = main_instagram.login(username, password)
+    if auth == "Login gagal":
+        return "Authorize Instagram Failed"
+    else:
+        return "Authorize Instagram Success"
+
+@app.route("/generate_instagram", methods=['POST'])
+def generate_instagram():
+    username = request.json.get("username")
+    password = request.json.get("password")
+
+    hashtag = request.json.get("hashtag")
+    maxposts = request.json.get("maxposts")
+    outputFileName = main_instagram.main(username, password, hashtag, int(maxposts))
 
     with open(os.getcwd() + "/" + outputFileName) as fp:
         csv = fp.read()

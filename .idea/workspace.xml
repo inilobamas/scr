@@ -2,8 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fc718aa-c448-435f-a3cf-566a9f7b56f0" name="Default Changelist" comment="# Conflicts:&#10;#&#9;README.md">
+      <change afterPath="$PROJECT_DIR$/inscrawler/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inscrawler/bin/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inscrawler/browser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inscrawler/crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inscrawler/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inscrawler/fetch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inscrawler/secret.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inscrawler/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inscrawler/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_flask.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_flask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_instagram.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_instagram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_twitter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main_flask.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main_flask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests-2.22.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests-2.22.0.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests-2.22.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests-2.22.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests-2.22.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests-2.22.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/__version__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/_internal_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/adapters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/adapters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/certs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/certs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/cookies.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/cookies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/hooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/hooks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/packages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/sessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/sessions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/status_codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/status_codes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,34 +50,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Exporter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="146" column="53" lean-forward="true" selection-start-line="134" selection-start-column="12" selection-end-line="146" selection-end-column="53" />
-              <folding>
-                <element signature="e#24#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_twitter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+            <state relative-caret-position="66">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_instagram.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="618">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
               <folding>
-                <element signature="e#24#74#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/got3/manager/TweetManager.py">
+        <entry file="file://$PROJECT_DIR$/inscrawler/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="-1855">
+              <caret line="153" selection-start-line="153" selection-end-line="153" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inscrawler/fetch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="179" column="4" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -49,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_flask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+            <state relative-caret-position="498">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="e#0#91#0" expanded="true" />
               </folding>
@@ -59,22 +104,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/main_youtube.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/main_flask.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
+            <state relative-caret-position="240">
+              <caret line="252" column="23" lean-forward="true" selection-start-line="252" selection-start-column="23" selection-end-line="252" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -94,27 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>maxtw</find>
-      <find>anal</find>
-      <find>Done. Output file generated</find>
-      <find>output_go</find>
-      <find>code</find>
-      <find>mention</find>
-      <find>receiveBuffer</find>
-      <find>outputFileName</find>
-      <find>sended</find>
-      <find>Br</find>
-      <find>Projec</find>
-      <find>Home</find>
-      <find>projects</find>
-      <find>Twitte</find>
-      <find>js/</find>
-      <find>form_tw</find>
-      <find>facebook</find>
-      <find>facebook()</find>
-      <find>filen</find>
-      <find>authen</find>
-      <find># Authentication Data</find>
       <find>access_token_secret_twitter</find>
       <find>secret_twitter</find>
       <find>‘</find>
@@ -123,7 +140,28 @@
       <find>crawl_twitter</find>
       <find>AuthenticateFa</find>
       <find>loadin</find>
+      <find>secret</find>
+      <find>self.login</find>
       <find>warning_authenticate_twitter</find>
+      <find>media?id</find>
+      <find>media_id</find>
+      <find>row_list</find>
+      <find>login</find>
+      <find>until</find>
+      <find>Instagran</find>
+      <find>crawl_instagram</find>
+      <find>username_tw</find>
+      <find>username_twitter</find>
+      <find>Twitter</find>
+      <find>twitter</find>
+      <find>authenticate_instagram</find>
+      <find>generate_instagram</find>
+      <find>num</find>
+      <find>until_date</find>
+      <find>.csv</find>
+      <find>get_latest_posts_by_tag</find>
+      <find>get_posts_by_hashtag</find>
+      <find>get_all_comments</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -154,21 +192,24 @@
         <option value="$PROJECT_DIR$/output_got.csv" />
         <option value="$PROJECT_DIR$/main_facebook.py" />
         <option value="$PROJECT_DIR$/main_youtube.py" />
-        <option value="$PROJECT_DIR$/main_instagram.py" />
         <option value="$PROJECT_DIR$/main_flask.html" />
         <option value="$PROJECT_DIR$/Exporter.py" />
         <option value="$PROJECT_DIR$/templates/js/jquery.js" />
         <option value="$PROJECT_DIR$/templates/main.html" />
-        <option value="$PROJECT_DIR$/main_twitter.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/inscrawler/secret.py" />
+        <option value="$PROJECT_DIR$/inscrawler/crawler.py" />
+        <option value="$PROJECT_DIR$/putihnya" />
         <option value="$PROJECT_DIR$/templates/main_flask.html" />
         <option value="$PROJECT_DIR$/main_flask.py" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/main_twitter.py" />
+        <option value="$PROJECT_DIR$/main_instagram.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -176,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,6 +228,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,6 +237,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/inscrawler/bin" />
+      <recent name="$PROJECT_DIR$/inscrawler" />
       <recent name="$PROJECT_DIR$/template" />
       <recent name="$PROJECT_DIR$/backup" />
     </key>
@@ -278,9 +321,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Run Instagram" type="PythonConfigurationType" factoryName="Python">
+      <module name="Paido" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_instagram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Run Exporter" />
       <item itemvalue="Python.Run Flask" />
+      <item itemvalue="Python.Run Instagram" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -297,21 +372,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16701902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12480253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27228916" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.26385543" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27029702" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.21089108" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.27831325" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32871288" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.27710843" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -362,7 +437,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_twitter.py</url>
-          <line>137</line>
+          <line>63</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -377,8 +452,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_twitter.py</url>
-          <line>82</line>
+          <line>10</line>
           <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_flask.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_instagram.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_instagram.py</url>
+          <line>114</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_instagram.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_instagram.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_instagram.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="169" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -386,114 +491,53 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>api</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>os.getcwd()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
         <expression-string>row_list</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>result_analyze</expression-string>
+        <expression-string>comments</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>len(results) &gt;= tweetCriteria.maxTweets</expression-string>
+        <expression-string>media_comments</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>tweetCriteria.maxTweets &gt; 0</expression-string>
+        <expression-string>e</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>maxtweets != &quot;0&quot; and maxtweets != &quot;&quot;</expression-string>
+        <expression-string>row</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>opts</expression-string>
+        <expression-string>url</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>argv</expression-string>
+        <expression-string>hashtag.replace(&quot;#&quot;, &quot;&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>out</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/#politic.csv" />
-    <entry file="file://$PROJECT_DIR$/#pindahibukota.csv" />
-    <entry file="file://$PROJECT_DIR$/#mcc.csv" />
-    <entry file="file://$PROJECT_DIR$/#politik.csv" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/textblob/blob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="619" column="6" selection-start-line="619" selection-start-column="6" selection-end-line="619" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/#dki.csv" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/tweepy/binder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="232" selection-start-line="232" selection-end-line="232" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backup/test_sastrawi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corpus.csv" />
-    <entry file="file://$PROJECT_DIR$/backup/create_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/899453338/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="246" column="4" selection-start-line="246" selection-start-column="4" selection-end-line="246" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/twitter/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-791">
-          <caret line="398" column="22" selection-start-line="398" selection-start-column="18" selection-end-line="398" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backup/main_backup_vader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/adapters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="515" selection-start-line="515" selection-end-line="515" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backup/#ibukotabaru.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -544,13 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="354" selection-start-line="354" selection-end-line="354" />
         </state>
       </provider>
     </entry>
@@ -615,12 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_youtube.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_instagram.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/backup/main_twitter_almost.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -635,13 +666,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_got.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="118" lean-forward="true" selection-start-column="118" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/output_got.csv" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -656,9 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/t.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/t.csv" />
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/flask/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
@@ -676,65 +699,15 @@
     <entry file="file://$PROJECT_DIR$/Exporter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
-          <caret line="146" column="53" lean-forward="true" selection-start-line="134" selection-start-column="12" selection-end-line="146" selection-end-column="53" />
+          <caret line="146" column="53" selection-start-line="134" selection-start-column="12" selection-end-line="146" selection-end-column="53" />
           <folding>
             <element signature="e#24#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/#ibukotabaru-2019-08-26-2019-08-27.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/got3/manager/TweetManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main_flask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_twitter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-          <folding>
-            <element signature="e#24#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_flask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main.html" />
+    <entry file="file://$PROJECT_DIR$/#ibukotabaru-2019-08-26-2019-08-27.csv" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -744,6 +717,147 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inscrawler/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/selenium/webdriver/common/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inscrawler/secret.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/InstagramAPI/InstagramAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="822" selection-start-line="822" selection-end-line="822" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Screen Shot 2020-01-07 at 08.16.45.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="354" selection-start-line="354" selection-end-line="354" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/putihnya" />
+    <entry file="file://$PROJECT_DIR$/food">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/certs.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inscrawler/browser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inscrawler/fetch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="179" column="4" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main_flask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="252" column="23" lean-forward="true" selection-start-line="252" selection-start-column="23" selection-end-line="252" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inscrawler/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1855">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/#aniesbaswedan.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/got3/manager/TweetManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_twitter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_instagram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_flask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_youtube.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
