@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, Response, send_file, send_from_directory
-import main_twitter, os, tweepy, main_instagram
+import main_twitter, os, tweepy, main_instagram, main_youtube
 
 app = Flask(__name__)
 
@@ -75,6 +75,22 @@ def generate_instagram():
     hashtag = request.json.get("hashtag")
     maxposts = request.json.get("maxposts")
     outputFileName = main_instagram.main(username, password, hashtag, int(maxposts))
+
+    with open(os.getcwd() + "/" + outputFileName) as fp:
+        csv = fp.read()
+        return Response(
+                csv,
+                mimetype="text/csv",
+                headers={"Content-disposition":
+                         "attachment; filename=" + outputFileName})
+
+@app.route("/generate_youtube", methods=['POST'])
+def generate_youtube():
+    url = request.json.get("url")
+    maxcomments = request.json.get("maxcomments")
+    if maxcomments == '':
+        maxcomments = 0
+    outputFileName = main_youtube.main(url, "youtube.csv", int(maxcomments))
 
     with open(os.getcwd() + "/" + outputFileName) as fp:
         csv = fp.read()
