@@ -186,16 +186,7 @@ def download_comments(youtube_id, sleep=1):
 
 
 def main(youtube_id, output, limit):
-# zCYN4KtreYk
-# downloader.py --youtubeid zCYN4KtreYk --output zCYN4KtreYk [--youtubeid YOUTUBEID] [--output OUTPUT]
-# parser = argparse.ArgumentParser(add_help=False, description=('Download Youtube comments without using the Youtube API'))
-# parser.add_argument('--help', '-h', action='help', default=argparse.SUPPRESS, help='Show this help message and exit')
-# parser.add_argument('--youtubeid', '-y', help='ID of Youtube video for which to download the comments')
-# parser.add_argument('--output', '-o', help='Output filename (output format is line delimited JSON)')
-# parser.add_argument('--limit', '-l', type=int, help='Limit the number of comments')
-
     try:
-        # args = parser.parse_args(sys.argv[1:])
         row_list = [["Channel", "Title", "Number Of Views", "Number Of Subscriptions", "Hashtag", "Comment ID", "Author", "Comment", "Time"]]
 
         info_video = get_info_video(YOUTUBE_COMMENTS_URL.format(youtube_id=youtube_id))
@@ -205,7 +196,7 @@ def main(youtube_id, output, limit):
 
         print('Downloading Youtube comments for video:', youtube_id)
         count = 0
-        # with io.open(output, 'w', encoding='utf8') as fp:
+
         for comment in download_comments(youtube_id):
 
             row = [
